@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Eternal Stone Bible — Política de Privacidad / Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --text: #1b1e24;
+    --text-muted: #5b6472;
+    --accent: #2e4a6b;
+    --accent-soft: #e4ebf2;
+    --border: #dde1e6;
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171c;
+    --surface: #1b1f26;
+    --text: #e7e9ec;
+    --text-muted: #9aa3af;
+    --accent: #8fb2d6;
+    --accent-soft: #223447;
+    --border: #2b3038;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171c;
+      --surface: #1b1f26;
+      --text: #e7e9ec;
+      --text-muted: #9aa3af;
+      --accent: #8fb2d6;
+      --accent-soft: #223447;
+      --border: #2b3038;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif {
+    font-family: ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", serif;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 20px;
+  }
+  .langbtn {
+    appearance: none;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+  }
+  .langbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .langbtn[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--surface);
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  header.doc-header {
+    margin-bottom: 48px;
+  }
+  .eyebrow {
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.15;
+    margin: 0 0 12px;
+    text-wrap: balance;
+    font-weight: 600;
+  }
+  .subline {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin: 0;
+  }
+
+  section { margin: 40px 0; }
+  section h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+    text-wrap: balance;
+  }
+  section p { margin: 0 0 14px; font-size: 15.5px; }
+  section ul { margin: 0 0 14px; padding-left: 22px; }
+  section li { margin-bottom: 8px; font-size: 15.5px; }
+  section li::marker { color: var(--accent); }
+  strong { font-weight: 600; }
+
+  .datacard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 18px 0;
+  }
+  .datarow {
+    display: grid;
+    grid-template-columns: 168px 1fr;
+    gap: 4px 18px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .datarow dt {
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent);
+    grid-column: 1;
+  }
+  .datarow dd {
+    margin: 0;
+    grid-column: 2;
+    font-size: 14.5px;
+    color: var(--text);
+  }
+  @media (max-width: 560px) {
+    .datarow { grid-template-columns: 1fr; }
+    .datarow dt { grid-column: 1; }
+    .datarow dd { grid-column: 1; }
+  }
+
+  .callout {
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout .callout-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 8px;
+  }
+
+  a { color: var(--accent); }
+
+  footer.doc-footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+
+  [data-lang] { display: none; }
+  [data-lang].active { display: block; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <button class="langbtn" data-setlang="es" aria-pressed="true">Español</button>
+  <button class="langbtn" data-setlang="en" aria-pressed="false">English</button>
+</div>
+
+<main>
+
+<!-- ================= SPANISH ================= -->
+<div data-lang="es" class="active">
+
+  <header class="doc-header">
+    <p class="eyebrow">Eternal Stone Bible</p>
+    <h1 class="serif">Política de Privacidad</h1>
+    <p class="subline">Última actualización: julio de 2026</p>
+  </header>
+
+  <section>
+    <p>Eternal Stone Bible es una aplicación de Eternal Stone (Victor Javier Vidal Durón, desarrollador individual). La Biblia, los planes de lectura, la oración y el resto de las funciones esenciales son y seguirán siendo completamente gratis.</p>
+    <p>La app funciona sin necesidad de crear una cuenta. Iniciar sesión con Google es <strong>opcional</strong> y solo sirve para sincronizar tu contenido entre tus dispositivos.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Qué información recopilamos</h2>
+    <div class="datacard">
+      <div class="datarow">
+        <dt>Cuenta</dt>
+        <dd>Si eliges iniciar sesión con Google, recibimos tu nombre y tu correo electrónico de Google para identificar tu cuenta.</dd>
+      </div>
+      <div class="datarow">
+        <dt>Tu contenido</dt>
+        <dd>Solo si iniciaste sesión: tus favoritos, notas, resaltados, marcadores, tarjetas de memorización y tu historial de repasos se guardan bajo tu propia cuenta, para que los tengas en todos tus dispositivos. Nunca son visibles para otros usuarios — la app no tiene funciones sociales, de mensajería ni de contenido público.</dd>
+      </div>
+      <div class="datarow">
+        <dt>Compras</dt>
+        <dd>Si adquieres la ofrenda/función premium a través de Google Play, el procesamiento lo maneja RevenueCat, que recibe los datos de la compra y tu suscripción — nunca tu contenido bíblico.</dd>
+      </div>
+      <div class="datarow">
+        <dt>Diagnóstico de fallos</dt>
+        <dd>Usamos Firebase Crashlytics para detectar y corregir errores técnicos. Desde el primer uso de la app, se genera un identificador anónimo de dispositivo (sin relación con tu identidad) para asociar los reportes de fallo y poder investigarlos. Si inicias sesión, ese identificador queda además vinculado a tu cuenta.</dd>
+      </div>
+      <div class="datarow">
+        <dt>Recordatorios</dt>
+        <dd>Las notificaciones (versículo del día, oración, memorización, etc.) se programan y se generan enteramente dentro de tu propio dispositivo. Nunca se envían a nuestros servidores ni a ningún servicio externo.</dd>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p class="callout-title">Lo que NO hacemos</p>
+      <p>No usamos ningún SDK de publicidad ni de analítica de comportamiento. No vendemos tu información. No la compartimos con terceros para fines de marketing.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="serif">Cómo usamos tu información</h2>
+    <ul>
+      <li>Sincronizar tu contenido entre los dispositivos donde usas la app.</li>
+      <li>Restaurar tus compras si cambias de dispositivo.</li>
+      <li>Detectar y corregir errores técnicos.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="serif">Con quién la compartimos</h2>
+    <p>Usamos los siguientes proveedores como procesadores de servicio — actúan bajo nuestras instrucciones, no como destinatarios independientes de tu información:</p>
+    <ul>
+      <li><strong>Google Firebase</strong> (autenticación, sincronización de tu contenido, diagnóstico de fallos)</li>
+      <li><strong>RevenueCat</strong> (procesamiento de compras dentro de la app)</li>
+    </ul>
+    <p>Cada uno tiene su propia política de privacidad. No vendemos ni compartimos tu información con fines publicitarios.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Seguridad y retención</h2>
+    <p>Tu contenido sincronizado se conserva mientras exista tu cuenta. Si nos solicitas eliminar tu cuenta (ver "Tus derechos" abajo), eliminamos también el contenido asociado a ella.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Tus derechos: acceder, corregir o eliminar tu información</h2>
+    <p>Puedes solicitar acceder, corregir o eliminar tu información — incluyendo la eliminación completa de tu cuenta y de todo tu contenido sincronizado — escribiéndonos a <a href="mailto:victorvdu+eternalstone@gmail.com">victorvdu+eternalstone@gmail.com</a>. Atenderemos tu solicitud en un plazo razonable.</p>
+    <p>Si resides en una región con derechos de privacidad adicionales (por ejemplo, el Espacio Económico Europeo, el Reino Unido o California), puedes ejercerlos escribiéndonos al mismo correo.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Menores de edad</h2>
+    <p>La lectura de la Biblia y las funciones esenciales de la app están disponibles para todo público. No dirigimos la aplicación intencionalmente a niños menores de 13 años ni recopilamos conscientemente información personal de ellos. Si un padre o tutor cree que esto ha ocurrido, puede escribirnos para eliminar la información.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Cambios a esta política</h2>
+    <p>Si actualizamos nuestras prácticas, revisaremos esta página y actualizaremos la fecha al inicio del documento.</p>
+  </section>
+
+  <footer class="doc-footer">
+    <p><strong>Responsable:</strong> Eternal Stone (Victor Javier Vidal Durón, desarrollador individual)</p>
+    <p><strong>Contacto:</strong> <a href="mailto:victorvdu+eternalstone@gmail.com">victorvdu+eternalstone@gmail.com</a></p>
+  </footer>
+</div>
+
+<!-- ================= ENGLISH ================= -->
+<div data-lang="en">
+
+  <header class="doc-header">
+    <p class="eyebrow">Eternal Stone Bible</p>
+    <h1 class="serif">Privacy Policy</h1>
+    <p class="subline">Last updated: July 2026</p>
+  </header>
+
+  <section>
+    <p>Eternal Stone Bible is an app by Eternal Stone (Victor Javier Vidal Durón, individual developer). The Bible, reading plans, prayer, and every other core feature are, and will always remain, completely free.</p>
+    <p>The app works without creating an account. Signing in with Google is <strong>optional</strong> and is only used to sync your content across your devices.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Information we collect</h2>
+    <div class="datacard">
+      <div class="datarow">
+        <dt>Account</dt>
+        <dd>If you choose to sign in with Google, we receive your name and email address from Google to identify your account.</dd>
+      </div>
+      <div class="datarow">
+        <dt>Your content</dt>
+        <dd>Only if you're signed in: your favorites, notes, highlights, bookmarks, memorization cards, and review history are saved under your own account so they're available on every device. They're never visible to other users — the app has no social, messaging, or public-content features.</dd>
+      </div>
+      <div class="datarow">
+        <dt>Purchases</dt>
+        <dd>If you make an offering/unlock a premium feature through Google Play, the purchase is processed by RevenueCat, which receives your purchase and subscription data — never your Bible content.</dd>
+      </div>
+      <div class="datarow">
+        <dt>Crash diagnostics</dt>
+        <dd>We use Firebase Crashlytics to detect and fix technical errors. From your first use of the app, an anonymous device identifier (unrelated to your identity) is generated to associate crash reports and investigate them. If you sign in, that identifier is additionally linked to your account.</dd>
+      </div>
+      <div class="datarow">
+        <dt>Reminders</dt>
+        <dd>Notifications (verse of the day, prayer, memorization, etc.) are scheduled and generated entirely on your own device. They are never sent to our servers or any external service.</dd>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p class="callout-title">What we don't do</p>
+      <p>We don't use any advertising or behavioral-analytics SDK. We don't sell your information. We don't share it with third parties for marketing purposes.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="serif">How we use your information</h2>
+    <ul>
+      <li>Sync your content across the devices where you use the app.</li>
+      <li>Restore your purchases if you switch devices.</li>
+      <li>Detect and fix technical errors.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="serif">Who we share it with</h2>
+    <p>We use the following providers as service processors — they act on our instructions, not as independent recipients of your information:</p>
+    <ul>
+      <li><strong>Google Firebase</strong> (authentication, content sync, crash diagnostics)</li>
+      <li><strong>RevenueCat</strong> (in-app purchase processing)</li>
+    </ul>
+    <p>Each has its own privacy policy. We do not sell or share your information for advertising purposes.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Security and retention</h2>
+    <p>Your synced content is kept for as long as your account exists. If you request account deletion by email (see "Your rights" below), we also delete the content associated with it.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Your rights: access, correct, or delete your information</h2>
+    <p>You can request to access, correct, or delete your information — including full account deletion and all synced content — by writing to us at <a href="mailto:victorvdu+eternalstone@gmail.com">victorvdu+eternalstone@gmail.com</a>. We'll handle your request within a reasonable time.</p>
+    <p>If you live in a region with additional privacy rights (for example, the European Economic Area, the UK, or California), you can exercise them by writing to the same address.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Children</h2>
+    <p>Reading the Bible and the app's core features are available to everyone. We do not knowingly direct the app at children under 13 or knowingly collect personal information from them. If a parent or guardian believes this has happened, please contact us to have the information removed.</p>
+  </section>
+
+  <section>
+    <h2 class="serif">Changes to this policy</h2>
+    <p>If our practices change, we'll revise this page and update the date at the top of the document.</p>
+  </section>
+
+  <footer class="doc-footer">
+    <p><strong>Data controller:</strong> Eternal Stone (Victor Javier Vidal Durón, individual developer)</p>
+    <p><strong>Contact:</strong> <a href="mailto:victorvdu+eternalstone@gmail.com">victorvdu+eternalstone@gmail.com</a></p>
+  </footer>
+</div>
+
+</main>
+
+<script>
+  document.querySelectorAll('[data-setlang]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-setlang');
+      document.querySelectorAll('[data-lang]').forEach(function (el) {
+        el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+      });
+      document.querySelectorAll('[data-setlang]').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  });
+</script>
+
+</body>
+</html>
