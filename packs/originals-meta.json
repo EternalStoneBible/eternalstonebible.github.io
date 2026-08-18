@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "bytes": 31178752,
+  "sha256": "88c795dcd173c19645667be69ed4fb999d1a79e4fb20a90936fb4752c22abf5c",
+  "generated": "2026-08-18",
+  "wordCount": 425424,
+  "lexiconEntries": 14197,
+  "note": "Fixes 2 parsing bugs: dropped words on 10 NT verses with alt-versification tags, and duplicate-key rows from LXX-retroversion-only OT entries. See scripts/build-originals-pack.js."
+}
